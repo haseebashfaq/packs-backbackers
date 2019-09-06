@@ -1,0 +1,119 @@
+/* Custom Styles */
+body {
+  font-family: 'Poppins', sans-serif; }
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 400; }
+
+.section-fg {
+  margin: 5%; }
+  .section-fg .content-wrapper {
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #F0F0F0; }
+    @media only screen and (min-width: 780px) {
+      .section-fg .content-wrapper {
+        flex-direction: row;
+        padding: 0; } }
+    @media only screen and (min-width: 1200px) {
+      .section-fg .content-wrapper {
+        height: 40vw; } }
+    .section-fg .content-wrapper-video {
+      display: none;
+      width: 100%;
+      height: 100%; }
+      @media only screen and (min-width: 780px) {
+        .section-fg .content-wrapper-video {
+          width: 50%;
+          display: flex;
+          justify-content: flex-end; } }
+      .section-fg .content-wrapper-video .img-mask {
+        display: none; }
+        @media only screen and (min-width: 780px) {
+          .section-fg .content-wrapper-video .img-mask {
+            top: -6.2%;
+            left: 18.47%;
+            width: 22.3%;
+            z-index: 10;
+            position: absolute;
+            display: block; } }
+      .section-fg .content-wrapper-video amp-video {
+        margin: 4%;
+        width: 55%;
+        border-radius: 8%; }
+    .section-fg .content-wrapper-form {
+      width: 100%;
+      padding: 5%;
+      background-color: #F0F0F0; }
+      @media only screen and (min-width: 780px) {
+        .section-fg .content-wrapper-form {
+          width: 50%; } }
+      .section-fg .content-wrapper-form .px-hl {
+        margin: 0 0 5% 0; }
+      .section-fg .content-wrapper-form .email-form {
+        width: 100%;
+        max-width: 450px;
+        margin-right: 3%;
+        display: flex;
+        flex-direction: column; }
+        .section-fg .content-wrapper-form .email-form-input {
+          height: 45px;
+          width: 70%;
+          padding: 0 15px;
+          margin: 10px 0;
+          border: none;
+          border-radius: 3px; }
+        .section-fg .content-wrapper-form .email-form-button {
+          height: 42px;
+          width: 120px;
+          border: none;
+          margin: 10px 0;
+          border-radius: 5px;
+          background-color: #53A6AE;
+          color: white; }
+
+.close-button {
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none; }
+  @media only screen and (min-width: 780px) {
+    .close-button {
+      bottom: 40px; } }
+  .close-button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    font-size: 3em;
+    color: #111; }
+
+.contactformfailure {
+  margin-top: 1rem;
+  background: #ff00007a;
+  padding: 1rem;
+  display: none;
+}
+
+.contactformsuccess {
+  margin-top: 1rem;
+  background: #0cff007a;
+  padding: 1rem;
+  display: none;
+}

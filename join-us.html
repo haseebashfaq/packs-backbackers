@@ -1,0 +1,123 @@
+<!doctype html>
+<html amp>
+    <head>
+        <meta charset="utf-8">
+        <title>PACKS-Backpackers</title>
+        <link rel="canonical" href="https://www.ampstart.com/templates/article.amp">
+        <link href="img/favicon.png" rel="icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133767516-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-133767516-1');
+        </script>
+
+        <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+        <script async custom-element="amp-access" src="https://cdn.ampproject.org/v0/amp-access-0.1.js"></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+        <link rel="stylesheet" href="public/css/join-us.css">
+        <link rel="stylesheet" href="public/css/normalize.css">
+        <link rel="stylesheet" href="public/css/bassplate.css">
+
+        <style amp-custom>
+
+        </style>
+
+    </head>
+    <body>
+        <div class="section-fg">
+            <div class="content-wrapper">
+                <div class="content-wrapper-video">
+                    <!-- <amp-img class="img-mask" src="img/img-mask.png" width="949" height="1873" alt="PACKS" layout="responsive"></amp-img> -->
+                    <amp-video id="feature-video--standard" class="feature-video"
+                      src="https://packs-backpackers.com/videos/packs-voucher.mp4"
+                      poster="videos/features/feature-d-poster"
+                      width="750"
+                      height="1337"
+                      layout="responsive"
+                      loop
+                      autoplay
+                      controls>
+                    </amp-video>
+                </div>
+                <div class="content-wrapper-form">
+                    <h1 class="px-hl">What’s in it for you?</h1>
+                    <p class="px-p">As our pre launch special we are sending our earliest supporters a big thank you:
+                        A voucher of 150 PACKS points with the launch of the app! With those you can save up to $50 on your first adventure booked through PACKS.
+                        <br>Until then, we promise you won’t hear from us!   ; -)</p>
+                    <form id="contactform" class="email-form">
+                      <input id="email" class="email-form-input" type="email"
+                        placeholder="Email..."
+                        name="email">
+                    <input id="name" class="email-form-input" type="name"
+                      placeholder="Name..."
+                      name="name">
+                      <input id="submitforvoucher" class="email-form-button" type="submit"
+                        value="Send">
+                    </form>
+                    <div class="alert alert-danger contactformfailure">
+                        Please fill out all the required fields correctly.
+                    </div>
+                    <div class="alert alert-success contactformsuccess">
+                        Thank you for contacting us! We will get back to you soon.
+                    </div>
+                </div>
+
+            </div>
+            <a class="close-button" href="index.html">
+                <i class="fas fa-times-circle"></i>
+            </a>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('#submitforvoucher').on('click', function (e) {
+                e.preventDefault();
+                var name       = $('#name').val();
+                var email      = $('#email').val();
+                
+                var proceed = true;
+                if(name=="" || email==""){
+                    proceed = false;
+                    $('.contactformfailure').fadeIn(500).delay(3000).fadeOut(500);
+                }
+                
+                if(proceed) {
+                    post_data = {
+                        'name':name,
+                        'email':email
+                    };
+                    console.log(post_data)
+                    e.preventDefault();
+                    $.ajax({
+                        type: 'post',
+                        url: 'action-voucher.php',
+                        data: post_data,
+                        success: function (returnval) {
+                            console.log(returnval);
+                            if(returnval=='sent') {
+                                // $('#contactform').fadeOut(function() {
+                                //     $('.contactformsuccess').fadeIn();
+                                // });
+                                window.location.href="success-voucher.html";
+                            }
+                        }
+                    });    
+                }
+            });
+        </script>
+
+    </body>
+</html>

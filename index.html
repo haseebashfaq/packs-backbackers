@@ -1,0 +1,765 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PACKS-Backpackers</title>
+        <link rel="canonical" href="https://www.ampstart.com/templates/article.amp">
+        <link href="img/favicon.png" rel="icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+        <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+        <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
+        <script custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js" async=""></script>
+        <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+        <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+        <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+        <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+        <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133767516-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-133767516-1');
+        </script>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="public/css/normalize.css">
+        <link rel="stylesheet" href="public/css/bassplate.css">
+        <link rel="stylesheet" href="public/css/main.css">
+
+        <style amp-custom>
+        </style>
+
+    </head>
+    <body>
+
+
+        <!-- Start Navbar -->
+        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="sidebar-toggle sidebar-toggle-open">☰</div>
+        <amp-sidebar id="sidebar1" class="sidebar" layout="nodisplay" side="left">
+            <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="sidebar-toggle sidebar-toggle-close">✕</div>
+            <a class="sidebar-logo"href="#stage">
+                <svg id="logo-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557.59 110.63"><defs><style>.cls-1,.cls-2{fill:none;stroke:#104e5a;stroke-miterlimit:10;}.cls-1{stroke-linecap:round;stroke-width:18px;}.cls-2{stroke-width:10px;}.cls-3{fill:#104e5a;}</style></defs><title>PACKS logo green</title><line class="cls-1" x1="134.17" y1="11.49" x2="192.47" y2="101.63"/><line class="cls-1" x1="159.83" y1="11.2" x2="101.58" y2="101.63"/><path class="cls-2" d="M134.72,108.94V98.67A12.59,12.59,0,0,1,147.3,86.11h0a12.59,12.59,0,0,1,12.55,12.56v10.27" transform="translate(0 0)"/><path class="cls-3" d="M41.3,3.42C62.44,3.42,77.1,17.78,77.1,39S62,74.57,40.49,74.57H19v32.22a2.91,2.91,0,0,1-2.91,2.91H0V3.42ZM19,59.25H36.22C49.85,59.25,57.8,51.88,57.8,39S49.92,19,36.3,19H19Z" transform="translate(0 0)"/><path class="cls-3" d="M227.15,54.87C227.15,21,246.37,0,276.57,0,301.24,0,320,15.39,322.38,38.22H306.3a3.34,3.34,0,0,1-3.2-2.45c-3.31-11.94-13.63-19.64-26.54-19.64-18.27,0-30,15-30,38.74s11.64,38.81,30.05,38.81c14.07,0,24.16-7.58,27.11-20.4h18.63C319,96,301.66,109.81,276.54,109.81,246.22,109.81,227.15,88.94,227.15,54.87Z" transform="translate(0 0)"/><path class="cls-3" d="M359.37,108.05V1.76h17.54a1.46,1.46,0,0,1,1.46,1.46h0V51.48H379L421.46,1.76h19.61a1,1,0,0,1,1.08.92,1,1,0,0,1-.3.79L402.38,48.94l44.12,59.15H423.38L388.83,61.64,378.37,73.87v34.18Z" transform="translate(0 0)"/><path class="cls-3" d="M490.7,78.36A2.16,2.16,0,0,1,492.79,80c2.19,8.81,11.42,14,23.92,14,12.82,0,21.73-6.33,21.73-15.17,0-7.66-5.31-12.37-19.15-15.25l-11.42-2.35c-21.28-4.34-31.23-14.34-31.23-29.91C476.64,12.66,493.07,0,516.12,0c23.5,0,39,12.81,39.48,31.81H539a1.81,1.81,0,0,1-1.81-1.47c-1.55-9.13-9.7-14.58-21.25-14.58-11.78,0-20.18,5.6-20.18,14.51,0,7.22,5.3,11.86,18.56,14.65l11.49,2.36c22.39,4.64,31.75,13.63,31.75,29.39,0,20.33-16,33.14-41.54,33.14-24.6,0-40.88-12-41.76-31.45Z" transform="translate(0 0)"/></svg>
+            </a>
+            <ul class="sidebar-content">
+                <li><i class="fas fa-home"></i><a href="#stage">Start</a></li>
+                <li><i class="fas fa-star"></i><a href="#highlights">Highlights</a></li>
+                <li><i class="fas fa-campground"></i><a href="#feature-img-mobile">Features</a></li>
+                <li><i class="fas fa-users"></i><a href="#our-users">Our Users</a></li>
+                <li><i class="fas fa-heart"></i><a href="#about-us">About Us</a></li>
+                <li><i class="fas fa-envelope"></i><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="sidebar-disclaimer">
+                <h5 class="sidebar-disclaimer-hl"></h5>
+                <a class="cta-button cta-button__join" href="join-us.html">Get my Voucher</a>
+                <p class="sidebar-disclaimer-copyright">© 2019 PACKS-Backpackers</p>
+                <a class="sidebar-disclaimer-legal" href="impressum.html">Impressum</a>
+            </div>
+        </amp-sidebar>
+
+        <header class="headerbar">
+            <div id="logo" class="headerbar-item">
+                <a href="#stage">
+                    <svg id="logo-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557.59 110.63"><defs><style>.cls-1,.cls-2{fill:none;stroke:#104e5a;stroke-miterlimit:10;}.cls-1{stroke-linecap:round;stroke-width:18px;}.cls-2{stroke-width:10px;}.cls-3{fill:#104e5a;}</style></defs><title>PACKS logo green</title><line class="cls-1" x1="134.17" y1="11.49" x2="192.47" y2="101.63"/><line class="cls-1" x1="159.83" y1="11.2" x2="101.58" y2="101.63"/><path class="cls-2" d="M134.72,108.94V98.67A12.59,12.59,0,0,1,147.3,86.11h0a12.59,12.59,0,0,1,12.55,12.56v10.27" transform="translate(0 0)"/><path class="cls-3" d="M41.3,3.42C62.44,3.42,77.1,17.78,77.1,39S62,74.57,40.49,74.57H19v32.22a2.91,2.91,0,0,1-2.91,2.91H0V3.42ZM19,59.25H36.22C49.85,59.25,57.8,51.88,57.8,39S49.92,19,36.3,19H19Z" transform="translate(0 0)"/><path class="cls-3" d="M227.15,54.87C227.15,21,246.37,0,276.57,0,301.24,0,320,15.39,322.38,38.22H306.3a3.34,3.34,0,0,1-3.2-2.45c-3.31-11.94-13.63-19.64-26.54-19.64-18.27,0-30,15-30,38.74s11.64,38.81,30.05,38.81c14.07,0,24.16-7.58,27.11-20.4h18.63C319,96,301.66,109.81,276.54,109.81,246.22,109.81,227.15,88.94,227.15,54.87Z" transform="translate(0 0)"/><path class="cls-3" d="M359.37,108.05V1.76h17.54a1.46,1.46,0,0,1,1.46,1.46h0V51.48H379L421.46,1.76h19.61a1,1,0,0,1,1.08.92,1,1,0,0,1-.3.79L402.38,48.94l44.12,59.15H423.38L388.83,61.64,378.37,73.87v34.18Z" transform="translate(0 0)"/><path class="cls-3" d="M490.7,78.36A2.16,2.16,0,0,1,492.79,80c2.19,8.81,11.42,14,23.92,14,12.82,0,21.73-6.33,21.73-15.17,0-7.66-5.31-12.37-19.15-15.25l-11.42-2.35c-21.28-4.34-31.23-14.34-31.23-29.91C476.64,12.66,493.07,0,516.12,0c23.5,0,39,12.81,39.48,31.81H539a1.81,1.81,0,0,1-1.81-1.47c-1.55-9.13-9.7-14.58-21.25-14.58-11.78,0-20.18,5.6-20.18,14.51,0,7.22,5.3,11.86,18.56,14.65l11.49,2.36c22.39,4.64,31.75,13.63,31.75,29.39,0,20.33-16,33.14-41.54,33.14-24.6,0-40.88-12-41.76-31.45Z" transform="translate(0 0)"/></svg>
+                </a>
+            </div>
+            <div id="elements">
+                <div class="headerbar-item">
+                    <a href="#highlights">Highlights</a>
+                </div>
+                <div class="headerbar-item">
+                    <a href="#feature-img-desktop">Features</a>
+                </div>
+                <div class="headerbar-item">
+                    <a href="#our-users">Our Users</a>
+                </div>
+                <div class="headerbar-item">
+                    <a href="#about-us">About Us</a>
+                </div>
+                <div class="headerbar-item">
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Stage -->
+        <section id="stage">
+            <div class="section-bg">
+                <amp-video autoplay
+                  src="https://packs-backpackers.com/videos/stage-bg-mobile.mp4"
+                  poster="videos/stage-bg-mobile.png"
+                  width="608"
+                  height="1080"
+                  layout="responsive"
+                  loop
+                  controls
+                  media="(max-width: 415px)">
+                </amp-video>
+                <amp-video autoplay
+                  src="https://packs-backpackers.com/videos/stage-bg-desktop.mp4"
+                  poster="videos/stage-bg-desktop.png"
+                  width="1920"
+                  height="1080"
+                  layout="responsive"
+                  loop
+                  controls
+                  media="(min-width: 416px)">
+                </amp-video>
+            </div>
+
+            <div class="section-fg m0">
+                <div class="content-wrapper">
+                    <div class="content-wrapper-image">
+                        <amp-img class="feature-img" src="img/stage-iphone.png" width="415" height="521" alt="PACKS" layout="responsive"></amp-img>
+                    </div>
+                    <div class="content-wrapper-description">
+                        <h4>Coming Soon!</h4>
+                        <h1 class="px-hl px-hl-mobile">PACKS</h1>
+                        <h1 class="px-hl px-hl-desktop">Explore the World with PACKS</h1>
+                        <h2 class="px-hl">The new Backpacker social platform!</h2>
+                        <div class="button-wrapper">
+                            <a class="cta-button cta-button__tour" href="take-a-tour.html">Take a Tour</a>
+                            <a class="cta-button cta-button__join" href="join-us.html">Get my Voucher</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section id="highlights">
+            <div class="transition transition-white--before"></div>
+            <div class="section-fg">
+                <div class="content-wrapper">
+    				<div class="icon-wrapper">
+                        <div class="icon-wrapper-left">
+                            <div class="icon-container">
+        						<div class="icon-container-icon">
+        							<i class="fas fa-gift"></i>
+        						</div>
+        						<h4>Free of Charge</h4>
+        						<p>PACKS is free to use and easy to set up, the perfect buddy for on the go!</p>
+        					</div>
+                            <div class="icon-container">
+        						<div class="icon-container-icon">
+        							<i class="fas fa-mobile"></i>
+        						</div>
+        						<h4>Your all-in-one</h4>
+        						<p>Save money, make friends, share adventures, seek advice, make it happen!</p>
+        					</div>
+                        </div>
+    					<div class="icon-wrapper-right">
+                            <div class="icon-container">
+        						<div class="icon-container-icon">
+        							<i class="fas fa-award"></i>
+        						</div>
+        						<h4>Quality first</h4>
+        						<p>An App tailored to your travel needs because we know the struggles that come with it.</p>
+        					</div>
+                            <div class="icon-container">
+        						<div class="icon-container-icon">
+        							<i class="fas fa-heart"></i>
+        						</div>
+        						<h4>Made with love</h4>
+        						<p>A valuable community of likeminded travellers with content you will love.</p>
+        					</div>
+                        </div>
+    				</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features - Text -->
+        <section id="feature-text-desktop">
+            <div class="section-fg">
+                <h1 class="px-hl">Say Yes to New Adventures!</h4>
+                <div class="card-container">
+                    <amp-position-observer on="scroll:fadeTransition.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay">
+                    </amp-position-observer>
+                    <div id="cardImage" class="card-container-card card-container-card--left">
+                        <h4 class="px-hl">Planning your next big trip?</h4>
+                        <p class="px-p">Use our travel talk forum to connect with others, exchange experiences and get inspired. Like planning in advance? Sign up to group adventures in your destination!</p>
+                    </div>
+                    <div id="cardImage" class="card-container-card card-container-card--center">
+                        <h4 class="px-hl">First time traveling solo?</h4>
+                        <p class="px-p">Join our community of likeminded world-explorers with a passion for people and adventure. Find travel mates, see what’s happening around you and join others on their adventures!</p>
+                    </div>
+                    <div id="cardImage" class="card-container-card  card-container-card--right">
+                        <h4 class="px-hl">Already exploring the world?</h4>
+                        <p class="px-p">Save money with our trip comparison and booking feature, share rides, sell that van, or review the job you just signed up for. No matter what, we got you covered!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features - Text -->
+        <section id="feature-text-mobile">
+            <div class="section-fg">
+                <h1 class="px-hl">Say Yes to New Adventures!</h4>
+                <amp-accordion class="feature-accordion" disable-session-states animate expand-single-section>
+                    <section class="feature-accordion-section">
+                        <header class="header">
+                            <h4 class="px-hl">Planning your next big trip?</h4>
+                            <i class="fas fa-angle-down"></i>
+                        </header>
+                        <!-- <div class="content"> -->
+                            <p class="px-p">Use our travel talk forum to connect with others, exchange experiences and get inspired. Like planning in advance? Sign up to group adventures in your destination!</p>
+                        <!-- </div> -->
+                    </section>
+                    <section class="feature-accordion-section">
+                        <header class="header">
+                            <h4 class="px-hl">First time traveling solo?</h4>
+                            <i class="fas fa-angle-down"></i>
+                        </header>
+                        <!-- <div class="content"> -->
+                            <p class="px-p">Join our community of likeminded world-explorers with a passion for people and adventure. Find travel mates, see what’s happening around you and join others on their adventures!</p>
+                        <!-- </div> -->
+                    </section>
+                    <section class="feature-accordion-section">
+                        <header class="header">
+                            <h4 class="px-hl">Already exploring the world?</h4>
+                            <i class="fas fa-angle-down"></i>
+                        </header>
+                        <!-- <div class="content"> -->
+                            <p class="px-p">Save money with our trip comparison and booking feature, share rides, sell that van, or review the job you just signed up for. No matter what, we got you covered!</p>
+                        <!-- </div> -->
+                    </section>
+                </amp-accordion>
+            </div>
+        </section>
+
+        <amp-animation id="fadeTransition" layout="nodisplay">
+          <script type="application/json">
+            {
+              "duration": "1",
+              "fill": "both",
+              "direction": "reverse",
+              "animations": [
+                {
+                  "selector": "#cardImage",
+                  "keyframes": [
+                    { "opacity": "0.5", "offset": 0 },
+                    { "opacity": "1", "offset": 0.4 },
+                    { "opacity": "1", "offset": 0.6 },
+                    { "opacity": "0.5", "offset": 1 }
+                  ]
+                }
+              ]
+            }
+          </script>
+        </amp-animation>
+        <amp-animation id="parallaxTransition" layout="nodisplay">
+          <script type="application/json">
+            {
+              "duration": "1",
+              "fill": "both",
+              "direction": "reverse",
+              "animations": [
+                {
+                  "selector": "#cardImage",
+                  "keyframes": [
+                    { "transform": "translateY(-30%)" }
+                  ]
+                }
+              ]
+            }
+          </script>
+        </amp-animation>
+
+
+        <section id="features-img-mobile">
+            <div class="section-fg">
+
+                <amp-carousel id="feature-carousel"
+                    class="users-carousel mb4"
+                    width="756"
+                    height="638"
+                    layout="responsive"
+                    type="slides"
+                    delay="100000"
+                    autoplay
+                    controls>
+
+                    <figure class="feature-slide m0">
+                        <amp-img class="feature-slide-img" src="img/feature-01-mobile.png" width="600" height="735" alt="PACKS" layout="responsive"></amp-img>
+                        <div class="feature-slide-text">
+                            <i class="fas fa-user-friends"></i>
+                            <h4 class="px-hl">Find Travel mates</h4>
+                            <p class="px-p">Find the perfect travel buddy for your next trip with our unique filter that guarantees a match!</p>
+                        </div>
+                    </figure>
+
+                    <figure class="feature-slide m0">
+                        <amp-img class="feature-slide-img" src="img/feature-02-mobile.png" width="600" height="735" alt="PACKS" layout="responsive"></amp-img>
+                        <div class="feature-slide-text">
+                            <i class="fas fa-calendar"></i>
+                            <h4 class="px-hl">See whats on</h4>
+                            <p class="px-p">Keep up to date with events happening around you and join others on their adventures!</p>
+                        </div>
+                    </figure>
+
+                    <figure class="feature-slide m0">
+                        <amp-img class="feature-slide-img" src="img/feature-03-mobile.png" width="600" height="735" alt="PACKS" layout="responsive"></amp-img>
+                        <div class="feature-slide-text">
+                            <i class="fas fa-piggy-bank"></i>
+                            <h4 class="px-hl">Surf the sales</h4>
+                            <p class="px-p">Compare and book the best travel deals out there and stop spending unnecessary $$$!</p>
+                        </div>
+                    </figure>
+
+                    <figure class="feature-slide m0">
+                        <amp-img class="feature-slide-img" src="img/feature-04-mobile.png" width="600" height="735" alt="PACKS" layout="responsive"></amp-img>
+                        <div class="feature-slide-text">
+                            <i class="fas fa-campground"></i>
+                            <h4 class="px-hl">Travel & Trade</h4>
+                            <p class="px-p">Save money and buy or sell second hand travel items that others no longer need!</p>
+                        </div>
+                    </figure>
+
+                    <figure class="feature-slide m0">
+                        <amp-img class="feature-slide-img" src="img/feature-05-mobile.png" width="600" height="735" alt="PACKS" layout="responsive"></amp-img>
+                        <div class="feature-slide-text">
+                            <i class="fas fa-car"></i>
+                            <h4 class="px-hl">Share a Ride</h4>
+                            <p class="px-p">The cheap and social way to get from A to B. </p>
+                        </div>
+                    </figure>
+
+                    <figure class="feature-slide m0">
+                        <amp-img class="feature-slide-img" src="img/feature-06-mobile.png" width="600" height="735" alt="PACKS" layout="responsive"></amp-img>
+                        <div class="feature-slide-text">
+                            <i class="fas fa-search-dollar"></i>
+                            <h4 class="px-hl">Check my job</h4>
+                            <p class="px-p">Find a job you can trust and help alert others of fraud.</p>
+                        </div>
+                    </figure>
+                </amp-carousel>
+            </div>
+        </section>
+
+        <section id="feature-img-desktop">
+            <div class="section-fg">
+                <div class="content-wrapper">
+                    <div class="icon-wrapper">
+                        <div class="icon-container">
+                            <div class="icon-container-img-wrapper">
+                                <amp-video id="feature-video--standard" class="feature-video"
+                                  src="https://packs-backpackers.com/videos/features/feature-d-01.mp4"
+                                  poster="videos/features/feature-d-poster"
+                                  width="750"
+                                  height="1337"
+                                  layout="responsive"
+                                  loop
+                                  autoplay
+                                  controls>
+                                </amp-video>
+                                <p>Find the perfect travel buddy for your next trip with our unique filter that guarantees a match!</p>
+                            </div>
+                            <div class="icon-container-icon">
+                                <i class="fas fa-user-friends"></i>
+                                <h4 class="px-hl">Find Travel mates</h4>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <div class="icon-container-img-wrapper">
+                                <amp-video class="feature-video"
+                                  src="https://packs-backpackers.com/videos/features/feature-d-02.mp4"
+                                  poster="videos/features/feature-d-poster"
+                                  width="750"
+                                  height="1337"
+                                  layout="responsive"
+                                  loop
+                                  autoplay
+                                  controls>
+                                </amp-video>
+                                <p>Keep up to date with events happening around you and join others on their adventures!</p>
+                            </div>
+                            <div class="icon-container-icon">
+                                <i class="fas fa-calendar"></i>
+                                <h4 class="px-hl">See whats on</h4>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <div class="icon-container-img-wrapper">
+                                <amp-video class="feature-video"
+                                  src="https://packs-backpackers.com/videos/features/feature-d-03.mp4"
+                                  poster="videos/features/feature-d-poster"
+                                  width="750"
+                                  height="1337"
+                                  layout="responsive"
+                                  loop
+                                  autoplay
+                                  controls>
+                                </amp-video>
+                                <p>Compare and book the best travel deals out there and stop spending unnecessary $$$!</p>
+                            </div>
+                            <div class="icon-container-icon">
+                                <i class="fas fa-piggy-bank"></i>
+                                <h4 class="px-hl">Surf the sales</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-wrapper">
+                        <amp-img class="feature-img-mask" src="img/img-mask.png" width="949" height="1873" alt="PACKS" layout="responsive"></amp-img>
+                        <amp-video class="feature-video"
+                          src="https://packs-backpackers.com/videos/features/feature-d-04.mp4"
+                          poster="videos/features/feature-d-poster"
+                          width="750"
+                          height="1337"
+                          layout="responsive"
+                          loop
+                          autoplay
+                          controls>
+                        </amp-video>
+                    </div>
+
+                    <div class="icon-wrapper">
+                        <div class="icon-container">
+                            <div class="icon-container-img-wrapper">
+                                <amp-video class="feature-video"
+                                  src="https://packs-backpackers.com/videos/features/feature-d-04.mp4"
+                                  poster="videos/features/feature-d-poster"
+                                  width="750"
+                                  height="1337"
+                                  layout="responsive"
+                                  loop
+                                  autoplay
+                                  controls>
+                                </amp-video>
+                                <p>Save money and buy or sell second hand travel items that others no longer need!</p>
+                            </div>
+                            <div class="icon-container-icon">
+                                <i class="fas fa-campground"></i>
+                                <h4 class="px-hl">Travel & Trade</h4>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <div class="icon-container-img-wrapper">
+                                <amp-video class="feature-video"
+                                  src="https://packs-backpackers.com/videos/features/feature-d-05.mp4"
+                                  poster="videos/features/feature-d-poster"
+                                  width="750"
+                                  height="1337"
+                                  layout="responsive"
+                                  loop
+                                  autoplay
+                                  controls>
+                                </amp-video>
+                                <p>The cheap and social way to get from A to B.</p>
+                            </div>
+                            <div class="icon-container-icon icon-container-icon-05">
+                                <i class="fas fa-car"></i>
+                                <h4 class="px-hl">Share a Ride</h4>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <div class="icon-container-img-wrapper">
+                                <amp-video class="feature-video"
+                                  src="https://packs-backpackers.com/videos/features/feature-d-06.mp4"
+                                  poster="videos/features/feature-d-poster"
+                                  width="750"
+                                  height="1337"
+                                  layout="responsive"
+                                  loop
+                                  autoplay
+                                  controls>
+                                </amp-video>
+                                <p>Find a job you can trust and help alert others of fraud.</p>
+                            </div>
+                            <div class="icon-container-icon icon-container-icon-06">
+                                <i class="fas fa-search-dollar"></i>
+                                <h4 class="px-hl">Check my job</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features - Text -->
+        <section id="appreciate">
+            <div class="section-fg">
+                <i class="fas fa-heart"></i>
+                <h1 class="px-hl">We appreciate you!</h4>
+                <p class="px-p px-p-mobile">At PACKS we are all about giving back to our community. Here’s how we’ll thank you for your support and engagement! Invite friends, be active, engage with others. Receive PACKS points and save on trips!</p>
+                <p class="px-p px-p-desktop">At PACKS we are all about giving back to our community. Here’s how we’ll thank you for your support and engagement!</p>
+                <div class="card-container">
+                    <div class="card-container-card">
+                        <amp-img class="appreciate-img" src="img/appreciate-01.png" width="400" height="400" alt="PACKS" layout="responsive"></amp-img>
+                        <h4 class="px-hl">Engage</h4>
+                        <p class="px-p">Invite friends, be active, engage with others</p>
+                    </div>
+                    <div class="card-container-card">
+                        <amp-img class="appreciate-img" src="img/appreciate-02.png" width="400" height="400" alt="PACKS" layout="responsive"></amp-img>
+                        <h4 class="px-hl">Be Rewarded</h4>
+                        <p class="px-p">Receive PACKS points and redeem vouchers</p>
+                    </div>
+                    <div class="card-container-card">
+                        <amp-img class="appreciate-img" src="img/appreciate-03.png" width="400" height="400" alt="PACKS" layout="responsive"></amp-img>
+                        <h4 class="px-hl">Save</h4>
+                        <p class="px-p">Save on trips booked through PACKS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="call-to-action">
+            <div class="section-fg">
+                <div class="content-wrapper">
+                    <!-- <h1 class="px-hl">Get your Voucher:</h1> -->
+                    <a class="cta-button cta-button__join" href="join-us.html">Get my Voucher</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Users -->
+        <section id="our-users">
+            <div class="section-fg">
+                <div class="content-wrapper">
+                    <h1 class="px-hl center">Our Users</h1>
+                    <amp-carousel id="carousel-with-preview"
+                        class="users-carousel"
+                        width="756"
+                        height="638"
+                        layout="responsive"
+                        type="slides"
+                        delay="100000"
+                        autoplay
+                        controls
+                        class="mb4">
+
+                        <figure class="user-slide rounded m0">
+                            <amp-img src="img/user-story-01-mobile.jpg" width="756" height="520" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            <div class="transition transition-white--before"></div>
+                            <div class="user-slide-text">
+                                <h4 class="px-hl">Laura 21, Germany</h4>
+                                <p class="px-p">I am very insecure about traveling alone but PACKS would make it so easy to find people I can relate to whom I may never have met otherwise. It would make me feel much more confident travelling alone.</p>
+                            </div>
+                        </figure>
+
+                        <figure class="user-slide rounded m0">
+                            <amp-img src="img/user-story-02-mobile.jpg" width="756" height="520" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            <div class="transition transition-white--before"></div>
+                            <div class="user-slide-text">
+                                <h4 class="px-hl">Sarah 19, England</h4>
+                                <p class="px-p">I am someone who spends days online researching everything about my backpacking trips. With PACKS I would have all the information in one place and can contact other travellers directly.</p>
+                            </div>
+                        </figure>
+
+                        <figure class="user-slide rounded m0">
+                            <amp-img src="img/user-story-03-mobile.jpg" width="756" height="520" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            <div class="transition transition-white--before"></div>
+                            <div class="user-slide-text">
+                                <h4 class="px-hl">John 25, France</h4>
+                                <p class="px-p">My budget isn’t big but with PACKS I could easily compare prices and find the best deals to accommodate my trips. They also only advertise good quality companies so you can trust you won’t be ripped off.</p>
+                            </div>
+                        </figure>
+
+                        <figure class="user-slide rounded m0">
+                            <amp-img src="img/user-story-04-mobile.jpg" width="756" height="520" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            <div class="transition transition-white--before"></div>
+                            <div class="user-slide-text">
+                                <h4 class="px-hl">Luke 29, England</h4>
+                                <p class="px-p">I love the idea of just buying and selling second hand travel items that others no longer need. This would make things so much easier and cheaper and even allows you to earn a couple of extra bucks!</p>
+                            </div>
+                        </figure>
+
+                        <figure class="user-slide rounded m0">
+                            <amp-img src="img/user-story-05-mobile.jpg" width="756" height="520" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            <div class="transition transition-white--before"></div>
+                            <div class="user-slide-text">
+                                <h4 class="px-hl">Zoey 29, Belgium</h4>
+                                <p class="px-p">The share a ride feature would make traveling long journeys much more fun and cheaper!  No more dreaded bus journeys or overpriced plane tickets, that can make you miss out on so much.</p>
+                            </div>
+                        </figure>
+                    </amp-carousel>
+                    <div class="carousel-preview">
+                        <button on="tap:carousel-with-preview.goToSlide(index=0)">
+                            <div class="carousel-preview-bullet"></div>
+                        </button>
+                        <button on="tap:carousel-with-preview.goToSlide(index=1)">
+                            <div class="carousel-preview-bullet"></div>
+                        </button>
+                        <button on="tap:carousel-with-preview.goToSlide(index=2)">
+                            <div class="carousel-preview-bullet"></div>
+                        </button>
+                        <button on="tap:carousel-with-preview.goToSlide(index=3)">
+                            <div class="carousel-preview-bullet"></div>
+                        </button>
+                        <button on="tap:carousel-with-preview.goToSlide(index=4)">
+                            <div class="carousel-preview-bullet"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Us -->
+        <section id="about-us">
+            <div class="section-fg">
+                <div class="headline-wrapper">
+                    <h1 class="px-hl">About Us</h1>
+                    <p class="center">We from PACKS have made it our goal to make backpacking as safe, fun and stress free as it can be! We can’t wait to start this journey with you :)</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="content-wrapper-container">
+                        <div class="user-container">
+                            <div class="user-container-img">
+                                <amp-img class="user-slide-img" src="img/about-us-yule.png" width="1" height="1" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            </div>
+                            <div class="user-container-txt">
+                                <h4>Yule</h4>
+                                <p>Product development</p>
+                                <p><strong>Favourite Country:</strong><br>Australia</p>
+                            </div>
+                        </div>
+                        <div class="user-container">
+                            <div class="user-container-img">
+                                <amp-img class="user-slide-img" src="img/about-us-robin.png" width="1" height="1" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            </div>
+                            <div class="user-container-txt">
+                                <h4>Robin</h4>
+                                <p>Technical lead</p>
+                                <p><strong>Favourite Country:</strong><br>Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrapper-container">
+                        <div class="user-container">
+                            <div class="user-container-img">
+                                <amp-img class="user-slide-img" src="img/about-us-christoph.png" width="1" height="1" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            </div>
+                            <div class="user-container-txt">
+                                <h4>Christoph</h4>
+                                <p>Business development</p>
+                                <p><strong>Favourite Country:</strong><br>Thailand</p>
+                            </div>
+                        </div>
+                        <div class="user-container">
+                            <div class="user-container-img">
+                                <amp-img class="user-slide-img" src="img/about-us-haseeb.png" width="1" height="1" alt="PACKS-Backpackers User Story" layout="responsive" class="user-slide-image"></amp-img>
+                            </div>
+                            <div class="user-container-txt">
+                                <h4>Haseeb</h4>
+                                <p>Project Manager</p>
+                                <p><strong>Favourite Country:</strong><br>Turkey</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transition transition-white--after"></div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="content-wrapper">
+                <h2 class="px-hl center">Any Questions?</h2>
+                <form id="contactform" class="email-form">
+                  <input id="name" class="email-form-input" type="name"
+                    placeholder="Name..."
+                    name="name">
+                  <input id="email" class="email-form-input" type="email"
+                    placeholder="Email..."
+                    name="email">
+                    <input id="message" class="email-form-input" type="message"
+                      placeholder="Message..."
+                      name="message">
+                  <input id="msgsend" class="email-form-button" type="submit"
+                    value="Send">
+                </form>
+                <div class="alert alert-danger contactformfailure">
+                    Please fill out all the required fields correctly.
+                </div>
+                <div class="alert alert-success contactformsuccess">
+                    Thank you for contacting us! We will get back to you soon.
+                </div>
+    	</section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="content-wrapper">
+                <footer class="flex flex-column items-center px3 ">
+                    <ul class="list-reset flex justify-around items-center flex-wrap m0 mb4">
+                        <li>
+                            <a href="https://www.instagram.com/packsbackpackers/" target="_blank" class="inline-block p1" aria-label="PACKS on Instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=Jk3vt-G-sdc" target="_blank" class="inline-block p1" aria-label="PACKS on YouTube"><i class="fab fa-youtube"></i></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/packs-backpackers-99965417b/" target="_blank" class="inline-block p1" aria-label="PACKS on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                    <nav class="ampstart-footer-nav">
+                      <ul class="list-reset flex flex-wrap mb3">
+                        <li class="px1"><a class="text-decoration-none ampstart-label" href="impressum.html">Impressum</a></li>
+                        <li class="px1"><a class="text-decoration-none ampstart-label" href="datenschutz.html">Datenschutz</a></li>
+                      </ul>
+                    </nav>
+                    <small>
+                      © PACKS-Backpackers, 2019
+                    </small>
+                </footer>
+            </div>
+
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('#msgsend').on('click', function (e) {
+                e.preventDefault();
+                var name       = $('#name').val();
+                var email      = $('#email').val();
+                var message  = $('#message').val();
+                
+                var proceed = true;
+                if(name=="" || email=="" || message==""){
+                    proceed = false;
+                    $('.contactformfailure').fadeIn(500).delay(3000).fadeOut(500);
+                }
+                
+                if(proceed) {
+                    post_data = {
+                        'name':name,
+                        'email':email,
+                        'message':message
+                    };
+                    console.log(post_data)
+                    e.preventDefault();
+                    $.ajax({
+                        type: 'post',
+                        url: 'action.php',
+                        data: post_data,
+                        success: function (returnval) {
+                            console.log(returnval);
+                            if(returnval=='sent') {
+                                // $('#contactform').fadeOut(function() {
+                                //     $('.contactformsuccess').fadeIn();
+                                // });
+                                window.location.href="success.html";
+                            }
+                        }
+                    });    
+                }
+            });
+        </script>
+
+    </body>
+</html>

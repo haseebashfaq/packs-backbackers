@@ -1,0 +1,5 @@
+node-sass --include-path scss scss/main.scss public/css/main.css
+node-sass --include-path scss scss/impressum.scss public/css/impressum.css
+node-sass --include-path scss scss/join-us.scss public/css/join-us.css
+node-sass --include-path scss scss/take-a-tour.scss public/css/take-a-tour.css
+node-sass --include-path scss scss/success.scss public/css/success.css
